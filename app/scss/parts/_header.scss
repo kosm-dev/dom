@@ -45,6 +45,44 @@
   }
 }
 
+.mobile-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.2s;
+  overflow: hidden;
+  &.active {
+    top: 0;
+    overflow: hidden;
+  }
+  &__inner {
+  }
+  &__head {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 88px;
+  }
+  &__head-logo {
+    width: 100%;
+    max-width: 63px;
+  }
+  &__body {
+  }
+}
+.item-menu {
+  &__title {
+  }
+  &__icon {
+  }
+  &__list {
+  }
+  &__link {
+  }
+}
+
 @media (max-width: 1200px) {
   .menu {
     display: none;
@@ -57,7 +95,6 @@
   }
 
   .header-control {
-    
     gap: 0 32px;
   }
 }
