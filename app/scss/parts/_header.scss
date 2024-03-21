@@ -1,0 +1,63 @@
+.header {
+  padding: 12px 32px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 30px;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__list-link {
+    @extend %proxima-700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $dark;
+  }
+}
+.header-control {
+  display: flex;
+  align-items: center;
+  gap: 0 24px;
+}
+.langswitcher {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  @extend %proxima-400;
+  font-size: 16px;
+  &__link {
+    text-transform: uppercase;
+    color: rgba($dark, 0.2);
+    transition: all 0.2s;
+  }
+  &__link--active {
+    color: $dark;
+  }
+  &__link:hover {
+    color: $dark;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .header-control {
+    
+    gap: 0 32px;
+  }
+}
