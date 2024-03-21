@@ -1,12 +1,14 @@
-// breakpoints
-$xxl: 1400px;
-$xl: 1200px;
-$lg: 992px;
-$md: 768px;
-$sm: 576px;
-$xs: 374px;
-
-%roboto-400 {
-  font-family: "Roboto", sans-serif;
+%proxima-400 {
+  font-family: 'Proxima Nova', sans-serif;
   font-weight: 400;
+}
+
+%proxima-700 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+}
+
+%proxima-800 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 800;
 }
