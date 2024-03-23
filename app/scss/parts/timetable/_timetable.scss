@@ -1,0 +1,142 @@
+.timetable {
+  &__inner {
+    padding: 100px 0;
+    border-bottom: 1px solid $dark;
+  }
+  &__title {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  &__items {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timetable-item {
+    border-bottom: 1px solid $dark;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.timetable-item {
+  width: 100%;
+  max-width: 860px;
+  display: flex;
+  align-items: center;
+  color: $dark;
+  @extend %proxima-400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 30px;
+  &__value {
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+    flex-basis: 120px;
+    flex-shrink: 0;
+  }
+  &__day {
+    @extend %proxima-700;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  &__month {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__time {
+    margin-right: 150px;
+    flex-basis: 60px;
+    flex-shrink: 0;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &__content {
+    width: 100%;
+    max-width: 330px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    @extend %proxima-700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .timetable__inner {
+    padding: 64px 0;
+  }
+  .timetable__title {
+    margin-bottom: 64px;
+  }
+  .timetable-item {
+    padding: 20px 10px 20px 0;
+  }
+  .timetable-item__value {
+    gap: 16px 0;
+  }
+
+  .timetable-item__day {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .timetable-item__month {
+    font-size: 14px;
+  }
+
+  .timetable-item__time {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .timetable-item__title {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .timetable-item__text {
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 768px) {
+  .timetable-item__value {
+    flex-basis: 90px;
+    margin-right: 60px;
+  }
+  .timetable-item__time {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .timetable-item {
+    padding: 20px 0;
+  }
+  .timetable-item__value {
+    margin-right: 16px;
+  }
+  .timetable-item__time {
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .timetable-item__value {
+    flex-basis: 90px;
+  }
+  .timetable-item__value {
+    margin-right: 8px;
+  }
+  .timetable-item__time {
+    margin-right: 8px;
+  }
+}

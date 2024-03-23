@@ -2,17 +2,23 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
+  min-height: 53px;
   padding: 12px 30px;
-  color: $dark;
   border: 2px solid $dark;
-  cursor: pointer;
   background-color: #fff;
-  transition: all .2s;
+  text-transform: uppercase;
+  @extend %proxima-700;
+  font-size: 18px;
+  line-height: 27px;
+  color: $dark;
+  transition: all 0.2s;
+  cursor: pointer;
   &__icon {
+    width: 19px;
+    height: 19px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
   }
   &:hover {
     background-color: $accent;
@@ -42,4 +48,22 @@
   background-color: $accent;
   color: $dark;
   border: 2px solid $dark;
+}
+
+@media (max-width: 992px) {
+  .btn {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 14px 30px;
+  }
+  .btn__icon {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn {
+    font-size: 14px;
+  }
 }
