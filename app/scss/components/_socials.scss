@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 0 33px;
+  li {
+    transition: all 0.2s;
+  }
+  &__link {
+    cursor: pointer;
+  }
+  &__link img {
+    width: 40px;
+    object-fit: cover;
+  }
+  li:hover {
+    transform: scale(0.9);
+  }
+}

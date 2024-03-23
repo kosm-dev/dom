@@ -1,32 +1,27 @@
+.btn-special {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 26px;
 
-.burger {
-  position: relative;
-  z-index: 5;
-  width: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px 0;
+  @extend %proxima-700;
+
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+  border: 2px solid #fff;
   cursor: pointer;
+
+  transition: all .2s;
+
 }
 
-.burger span {
-  height: 3px;
-  background-color: $dark;
-  transition: all 0.2s;
-}
-
-.burger.active {
-  margin-top: -70px;
-  margin-right: 30px;
-}
-
-.burger.active span:nth-child(1) {
-  transform: translate(0, 9px) rotate(45deg);
-}
-
-.burger.active span:nth-child(2) {
-  transform: scale(0);
-}
-.burger.active span:nth-child(3) {
-  transform: translate(0, calc(-1 * 9px)) rotate(-45deg);
+.btn-special:hover {
+  background-color: $accent;
+  color: $dark;
+  border: 2px solid $dark;
 }

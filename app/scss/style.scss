@@ -4,8 +4,10 @@
 @import "libs";
 @import "global";
 
-@import "parts/header";
+@import "parts/header/header";
+@import "parts/hero/hero";
 
 @import "components/infoboard";
 @import "components/buttons";
+@import "components/socials";
 
