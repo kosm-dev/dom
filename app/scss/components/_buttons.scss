@@ -1,3 +1,24 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 30px;
+  color: $dark;
+  border: 2px solid $dark;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all .2s;
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &:hover {
+    background-color: $accent;
+  }
+}
+
 .btn-special {
   display: inline-flex;
   align-items: center;
@@ -12,12 +33,9 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-
   border: 2px solid #fff;
   cursor: pointer;
-
-  transition: all .2s;
-
+  transition: all 0.2s;
 }
 
 .btn-special:hover {

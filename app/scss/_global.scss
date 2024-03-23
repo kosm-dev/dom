@@ -50,9 +50,28 @@ body {
   margin: 0 auto;
 }
 
-
 .logo {
   width: 100%;
   max-width: 39px;
 }
 
+.title {
+  @extend %proxima-800;
+  font-size: 48px;
+  line-height: 58px;
+  color: $dark;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+    color: $dark;
+  }
+}
