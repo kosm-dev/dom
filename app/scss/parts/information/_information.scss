@@ -2,7 +2,16 @@
   &__item {
     border-bottom: 1px solid $dark;
   }
+  &--special .information__item {
+    border-bottom: 0;
+  }
 }
+
+// .information--special {
+//   .information__item {
+//     border-bottom: 0;
+//   }
+// }
 
 .information-item {
   display: flex;
