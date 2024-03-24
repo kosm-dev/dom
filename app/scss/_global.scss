@@ -51,9 +51,12 @@ body {
 }
 
 .logo {
-  width: 100%;
-  max-width: 39px;
+  &__img {
+    width: 39px;
+    object-fit: contain;
+  }
 }
+
 
 .title {
   @extend %proxima-800;
