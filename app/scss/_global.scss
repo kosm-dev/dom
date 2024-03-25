@@ -109,9 +109,18 @@ body {
     line-height: 38px;
     color: $dark;
   }
+
+  .title-section {
+    font-size: 48px;
+    line-height: 120%;
+  }
 }
 
 @media (max-width: 360px) {
+  .title-section {
+    font-size: 32px;
+    line-height: 38px;
+  }
   .big-img {
     img {
       min-height: 200px;
