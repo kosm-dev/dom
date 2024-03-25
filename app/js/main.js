@@ -19,18 +19,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  if (document.querySelector('.item-menu__icon[data-icon-toggle]')) {
+    const icons = document.querySelectorAll('.item-menu__icon[data-icon-toggle]');
 
-  var icons = document.querySelectorAll('.item-menu__icon[data-icon-toggle]');
-
-  icons.forEach(function (icon) {
-    
-    icon.addEventListener('click', function () {
-      var parent = this.closest('.item-menu');
-      var list = parent.querySelector('.item-menu__list');
-      icon.classList.toggle('active');
-      list.classList.toggle('active');
+    icons.forEach(function (icon) {
+      icon.addEventListener('click', function () {
+        const parent = this.closest('.item-menu');
+        const list = parent.querySelector('.item-menu__list');
+        icon.classList.toggle('active');
+        list.classList.toggle('active');
+      });
     });
-  });
+  }
+
 
 
   // slider
