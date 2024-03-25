@@ -1,0 +1,68 @@
+.believe-features {
+  margin-top: 110px;
+  margin-bottom: 130px;
+  &__title {
+    margin-bottom: 64px;
+    text-align: center;
+  }
+  &__items {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+  }
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.believe-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 64px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $dark;
+  &__title {
+    font-size: 36px;
+    line-height: 120%;
+    width: 100%;
+    max-width: 504px;
+  }
+  &__text {
+    width: 100%;
+    max-width: 716px;
+    span {
+      @extend %proxima-700;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .believe-features {
+    margin-top: 64px;
+  }
+  .believe-features__title {
+    margin-bottom: 40px;
+  }
+  .believe-features__items {
+    margin-bottom: 40px;
+  }
+  .believe-feature {
+    padding-top: 0;
+    flex-direction: column;
+    gap: 24px 0;
+    padding-bottom: 50px;
+  }
+  .believe-feature__title {
+    font-size: 24px;
+    max-width: none;
+  }
+  .believe-feature__text {
+    max-width: none;
+  }
+  .believe-features__btns {
+    justify-content: flex-start;
+  }
+}
