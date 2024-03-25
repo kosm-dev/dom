@@ -198,7 +198,7 @@
     width: 100%;
     padding-right: 0;
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    gap: 20px 0;
   }
   .item-menu {
     max-width: none;
@@ -208,7 +208,8 @@
     display: flex;
     align-items: center;
     gap: 0 20px;
-    margin-top: 20px;
+    margin-top: 21px;
+    margin-bottom: 0;
   }
 
   .item-menu__title a {
@@ -220,8 +221,9 @@
     display: block;
     padding: 10px;
     cursor: pointer;
-    transition: all .2s;
+    transition: transform 0.2s;
   }
+
   .item-menu__icon.active {
     transform: rotate(45deg);
   }
@@ -230,18 +232,12 @@
     width: 21px;
   }
   .item-menu__list {
+    display: none;
+    margin-top: 16px;
     gap: 8px 0;
-
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition:
-      max-height 0.2s ease,
-      opacity 0.2s ease;
   }
   .item-menu__list.active {
-    opacity: 1;
-    max-height: 100%;
+    display: block;
   }
   .item-menu__link {
     font-size: 16px;

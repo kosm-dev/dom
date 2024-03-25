@@ -19,10 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+
   if (document.querySelector('.item-menu__icon[data-icon-toggle]')) {
+
     const icons = document.querySelectorAll('.item-menu__icon[data-icon-toggle]');
 
-    icons.forEach(function (icon) {
+    icons.forEach(icon => {
       icon.addEventListener('click', function () {
         const parent = this.closest('.item-menu');
         const list = parent.querySelector('.item-menu__list');
@@ -30,7 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
         list.classList.toggle('active');
       });
     });
+
   }
+
+
+
+
+
+
+
+
+
+
 
 
 
