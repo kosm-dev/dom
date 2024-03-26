@@ -71,6 +71,16 @@ body {
   color: $gray3;
 }
 
+.title-special {
+  padding: 32px 20px;
+  @extend %proxima-800;
+  font-size: 70px;
+  line-height: 120%;
+  border-top: 1px solid $dark;
+  border-bottom: 1px solid $dark;
+  text-align: center;
+}
+
 .big-img {
   width: 100%;
   max-width: 1920px;
@@ -114,12 +124,20 @@ body {
     font-size: 48px;
     line-height: 120%;
   }
+  .title-special {
+    padding: 24px 20px;
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 360px) {
   .title-section {
     font-size: 32px;
     line-height: 38px;
+  }
+
+  .title-special {
+    font-size: 32px;
   }
   .big-img {
     img {
