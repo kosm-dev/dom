@@ -7,12 +7,6 @@
   }
 }
 
-// .information--special {
-//   .information__item {
-//     border-bottom: 0;
-//   }
-// }
-
 .information-item {
   display: flex;
   justify-content: space-between;
@@ -38,8 +32,12 @@
     max-width: 611px;
     border: 2px solid $dark;
   }
+
   &__media img {
     object-fit: cover;
+  }
+  &--special .information-item__media {
+    order: -1;
   }
 }
 
