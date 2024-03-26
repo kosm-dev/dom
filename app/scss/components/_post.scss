@@ -1,0 +1,27 @@
+.post {
+  width: 100%;
+  max-width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  &__img img {
+    object-fit: cover;
+  }
+  &__title {
+    @extend %proxima-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark;
+  }
+}
+
+@media (max-width: 992px) {
+  .post {
+    gap: 32px 0;
+  }
+  .post__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

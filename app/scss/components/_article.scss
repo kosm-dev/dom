@@ -1,0 +1,29 @@
+.article {
+  width: 100%;
+  max-width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+  &__img {
+    border: 1px solid $dark;
+  }
+  &__img img {
+    object-fit: cover;
+  }
+  &__title {
+    @extend %proxima-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark;
+  }
+}
+
+@media (max-width: 992px) {
+  .article {
+    gap: 27px 0;
+}
+  .article__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
