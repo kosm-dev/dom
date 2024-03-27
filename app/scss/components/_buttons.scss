@@ -66,6 +66,15 @@
   }
 }
 
+.link-simple {
+  display: inline-block;
+  @extend %proxima-700;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: $dark;
+}
+
 @media (max-width: 992px) {
   .btn {
     font-size: 16px;
@@ -84,6 +93,10 @@
   .link__icon {
     width: 11px;
     height: 11px;
+  }
+
+  .link-simple {
+    font-size: 16px;
   }
 }
 
