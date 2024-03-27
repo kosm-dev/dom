@@ -19,6 +19,8 @@
     max-width: 500px;
   }
   &__title {
+    width: 100%;
+    max-width: 450px;
     margin-bottom: 27px;
   }
   &__text {
@@ -26,5 +28,44 @@
     font-size: 20px;
     line-height: 30px;
     color: $dark;
+  }
+  .socials__link img {
+    width: 47px;
+}
+}
+
+.post-featured {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .main-post {
+    padding-top: 64px;
+  }
+  .main-post__inner {
+    padding-bottom: 64px;
+  }
+  .main-post__title {
+    max-width: none;
+    margin-bottom: 24px;
+  }
+  .main-post__content {
+    max-width: none;
+  }
+  .main-post__text {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main-post__item {
+    flex-direction: column;
+    gap: 40px 0;
+  }
+  
+  .post-featured {
+    margin-bottom: 70px;
+  }
+  .post-featured .media-item {
+    padding: 64px 0;
   }
 }
