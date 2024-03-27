@@ -21,6 +21,9 @@
     margin-right: -20px;
     overflow-x: hidden;
   }
+  .media-item__title {
+    padding-right: 20px;
+  }
   .media-item__box {
     display: flex;
     flex-wrap: nowrap;
@@ -35,13 +38,17 @@
     margin-right: 20px;
   }
   .media-item__btns {
+    padding-right: 20px;
     order: 3;
   }
 }
 
 @media (max-width: 992px) {
+  .media__inner {
+    margin-bottom: 70px;
+  }
   .media-item {
-    padding: 64px 0;
+    padding: 32px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

@@ -1,10 +1,39 @@
 .entrie {
+  width: 100%;
+  max-width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   &__img {
+    border: 1px solid $dark;
+  }
+  &__img img {
+    object-fit: cover;
   }
   &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
   }
   &__title {
+    @extend %proxima-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark;
   }
   &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .entrie {
+    gap: 27px 0;
+  }
+  .entrie__content {
+    gap: 13px 0;
   }
 }

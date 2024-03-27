@@ -5,6 +5,9 @@
   flex-direction: column;
   gap: 36px;
 
+  &__img {
+    border: 1px solid $dark;
+  }
   &__img img {
     object-fit: cover;
   }
