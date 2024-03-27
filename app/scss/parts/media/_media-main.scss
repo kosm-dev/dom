@@ -8,6 +8,9 @@
     display: flex;
     justify-content: center;
   }
+  &__top-items {
+    margin-bottom: 150px;
+  }
 }
 
 .media-list {
@@ -35,7 +38,10 @@
 
   .media-main__links {
     margin-top: 32px;
-    
+  }
+  .media-main__top-items {
+    margin-bottom: 0;
+    margin-bottom: -1px;
   }
 }
 
