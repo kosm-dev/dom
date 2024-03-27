@@ -1,0 +1,30 @@
+.main-post {
+  padding-top: 100px;
+  border-top: 1px solid $dark;
+  &__inner {
+    padding-bottom: 100px;
+    border-bottom: 1px solid $dark;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 50px;
+  }
+  &__img {
+    width: 100%;
+    max-width: 611px;
+  }
+  &__content {
+    width: 100%;
+    max-width: 500px;
+  }
+  &__title {
+    margin-bottom: 27px;
+  }
+  &__text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $dark;
+  }
+}
