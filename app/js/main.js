@@ -18,8 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenuToggle(burgerClose, mobileMenu);
   }
 
-
-
   if (document.querySelector('.item-menu__icon[data-icon-toggle]')) {
 
     const icons = document.querySelectorAll('.item-menu__icon[data-icon-toggle]');
@@ -32,14 +30,54 @@ document.addEventListener("DOMContentLoaded", () => {
         list.classList.toggle('active');
       });
     });
+  }
+
+
+  if (document.querySelector('.modal')) {
+    const modalTrigger = document.querySelectorAll('[data-modal]'),
+          modal = document.querySelector('.modal'),
+          modalCloseBtn = document.querySelector('[data-close]');
+
+    function openModal() {
+      modal.classList.add('show');
+      modal.classList.remove('hide');
+      document.body.classList.add('lock');
+    }
+
+    function closeModal() {
+      modal.classList.add('hide');
+      modal.classList.remove('show');
+      document.body.classList.remove('lock');
+    }
+
+    modalTrigger.forEach(btn => {
+      btn.addEventListener('click', openModal);
+    });
+
+
+    modalCloseBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.code === "Escape" && modal.classList.contains('show')) {
+        closeModal();
+      }
+    });
 
   }
 
 
 
+
+
+
+
   // slider
-
-
   const heroSlider = new Swiper('.hero-slider', {
     // Optional parameters
     loop: true,

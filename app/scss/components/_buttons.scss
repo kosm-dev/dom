@@ -75,6 +75,40 @@
   color: $dark;
 }
 
+.link-singular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %proxima-700;
+  font-size: 24px;
+  line-height: 26px;
+  color: $dark;
+  padding: 23px 20px;
+  background-color: $gray1;
+  transition: all 0.2s;
+  border: 1px solid $dark;
+  cursor: pointer;
+  &:hover {
+    background-color: $accent;
+  }
+  &__icon {
+    margin-left: 26px;
+  }
+  &__icon img {
+    width: 20px;
+    object-fit: contain;
+  }
+}
+
+.link-box {
+  border: 1px solid $dark;
+  background-color: $gray1;
+  .link-singular {
+    margin-top: -1px;
+    margin-bottom: -1px;
+  }
+}
+
 @media (max-width: 992px) {
   .btn {
     font-size: 16px;
