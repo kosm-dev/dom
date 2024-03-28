@@ -237,7 +237,7 @@
     gap: 8px 0;
   }
   .item-menu__list.active {
-    display: block;
+    display: flex;
   }
   .item-menu__link {
     font-size: 16px;

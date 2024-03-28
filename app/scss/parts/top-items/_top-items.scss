@@ -20,9 +20,9 @@
   width: 100%;
   background-color: $gray1;
   padding: 78px 30px;
-  transition: all 0.2s;
   min-height: 250px;
   border: 1px solid $dark;
+  transition: all .2s;
   &:hover {
     background-color: $accent;
   }
@@ -72,6 +72,7 @@
     max-width: none;
     padding: 41px 61px 30px 30px;
     min-height: 200px;
+    transition: none;
   }
 
   .top-item__title {
