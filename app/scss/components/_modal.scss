@@ -8,20 +8,21 @@
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba($dark3, 0.7);
 }
 
 .modal__dialog {
   position: relative;
   width: 100%;
   max-width: 1060px;
-  margin: 300px auto 50px;
+  margin: 456px auto 50px;
 }
 
 .modal__content {
   width: 100%;
   max-height: 80vh;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-top: 32px;
   padding-bottom: 70px;
   background-color: $gray1;
@@ -30,11 +31,42 @@
 
 .modal__close {
   position: absolute;
-  top: -80px;
+  top: -112px;
   right: -80px;
   cursor: pointer;
   transition: all 0.2s;
 }
 .modal__close:hover {
   transform: scale(0.95);
+}
+
+@media (max-width: 1600px) {
+  .modal__dialog {
+    margin: 150px auto 50px;
+  }
+  .modal__close {
+    top: -80px;
+    right: -80px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .modal__dialog {
+    margin: 150px auto 50px;
+    padding: 0 20px;
+  }
+  .modal__close {
+    top: -80px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal__dialog {
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+  .modal__close {
+    display: none;
+  }
 }

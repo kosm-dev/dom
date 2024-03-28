@@ -132,10 +132,24 @@
   .link-simple {
     font-size: 16px;
   }
+  .link-singular {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px;
+  }
+  .link-singular__icon {
+    margin-left: 22px;
+  }
+  .link-singular__icon img {
+    width: 14px;
+  }
 }
 
 @media (max-width: 360px) {
   .btn {
+    font-size: 13px;
+  }
+   .link-singular {
     font-size: 13px;
   }
 }

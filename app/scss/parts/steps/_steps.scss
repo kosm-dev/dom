@@ -17,3 +17,35 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .steps__content {
+    flex-direction: column;
+  }
+  .steps__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .steps {
+    .link-singular {
+      font-size: 20px;
+      line-height: 24px;
+      padding: 24px 32px;
+    }
+
+    .link-singular__icon img {
+      width: 17px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .steps {
+    .link-singular {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    
+  }
+}
