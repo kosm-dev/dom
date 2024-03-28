@@ -81,6 +81,13 @@ body {
   text-align: center;
 }
 
+.title-group {
+  @extend %proxima-800;
+  font-size: 36px;
+  line-height: 43px;
+  color: $dark;
+}
+
 .big-img {
   width: 100%;
   max-width: 1920px;
@@ -127,6 +134,11 @@ body {
   .title-special {
     padding: 24px 20px;
     font-size: 40px;
+  }
+
+  .title-group {
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 
