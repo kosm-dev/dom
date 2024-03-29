@@ -28,8 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const list = parent.querySelector('.item-menu__list');
         icon.classList.toggle('active');
         list.classList.toggle('active');
+        
       });
     });
+
+
+
+
   }
 
 
