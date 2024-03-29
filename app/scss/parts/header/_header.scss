@@ -219,6 +219,7 @@
   }
 
   .item-menu__icon {
+    display: block;
     position: relative;
     width: 22px;
     height: 22px;
@@ -256,9 +257,10 @@
     flex-direction: row;
     justify-content: center;
     gap: 33px;
-    position: fixed;
     width: 100%;
+    position: fixed;
     bottom: 0;
+    z-index: 10;
     background-color: $gray1;
   }
 }
