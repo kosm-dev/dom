@@ -22,7 +22,7 @@
   padding: 78px 30px;
   min-height: 250px;
   border: 1px solid $dark;
-  transition: all .2s;
+  transition: all 0.2s;
   &:hover {
     background-color: $accent;
   }
@@ -40,7 +40,7 @@
     color: $dark;
   }
   &__icon {
-    flex-basis: 32px;
+    flex-basis: 54px;
     flex-shrink: 0;
   }
   &__text {
@@ -70,7 +70,7 @@
 
   .top-item {
     max-width: none;
-    padding: 41px 61px 30px 30px;
+    padding: 41px 50px 41px 30px;
     min-height: 200px;
     transition: none;
   }
@@ -79,8 +79,11 @@
     font-size: 32px;
     line-height: 38px;
   }
-
-  .top-item__icon {
-    flex-basis: 30px;
-  }
 }
+
+
+@media (max-width: 360px) {
+  .top-item {
+    padding: 40px 30px;
+  }
+} 

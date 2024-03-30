@@ -10,7 +10,7 @@
 
     .link-singular {
       flex-basis: 50%;
-      padding: 22px 30px 22px 24px;
+      padding: 20px 24px;
       justify-content: space-between;
       margin-top: -1px;
       margin-right: -1px;
@@ -30,11 +30,12 @@
     .link-singular {
       font-size: 20px;
       line-height: 24px;
-      padding: 24px 32px;
+      padding: 20px 32px;
+      margin-left: -1px;
     }
 
     .link-singular__icon img {
-      width: 17px;
+      width: 32px;
     }
   }
 }
