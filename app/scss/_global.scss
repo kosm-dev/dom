@@ -16,11 +16,11 @@ body {
 }
 
 .hide {
-  display: none!important;
+  display: none !important;
 }
 
 .show {
-  display: block!important;
+  display: block !important;
 }
 
 .wrapper {
@@ -61,6 +61,13 @@ body {
   @extend %proxima-800;
   font-size: 48px;
   line-height: 58px;
+  color: $dark;
+}
+
+.title-main {
+  @extend %proxima-800;
+  font-size: 70px;
+  line-height: 84px;
   color: $dark;
 }
 
@@ -126,6 +133,11 @@ body {
     line-height: 38px;
     color: $dark;
   }
+
+  .title-main {
+  font-size: 40px;
+  line-height: 48px;
+}
 
   .title-section {
     font-size: 48px;
