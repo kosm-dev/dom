@@ -1,0 +1,31 @@
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0 30px;
+  &__img {
+    width: 100%;
+    max-width: 505px;
+    border: 1px solid #000;
+  }
+  &__img img {
+    min-height: 330px;
+    object-fit: cover;
+  }
+  &__content {
+    width: 100%;
+    max-width: 610px;
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__descr p {
+    margin-bottom: 24px;
+  }
+  &__descr p:last-child {
+    margin-bottom: 0;
+  }
+  &__btns {
+    margin-top: 64px;
+  }
+}

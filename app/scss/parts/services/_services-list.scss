@@ -1,0 +1,20 @@
+.main__services-list {
+  margin-bottom: 50px;
+}
+.services-list {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 100px 0;
+    .service-item {
+      padding-bottom: 100px;
+      border-bottom: 1px solid $dark;
+    }
+    .service-item:last-child {
+      border-bottom: 0;
+    }
+  }
+  &__title-special {
+    margin-bottom: 100px;
+  }
+}
