@@ -38,6 +38,8 @@
 @import "parts/meetings/meetings";
 @import "parts/meetings/meetings-items";
 
+@import "parts/main-meeting/main-meeting";
+
 
 
 
@@ -54,4 +56,6 @@
 @import "components/media-player";
 @import "components/modal";
 @import "components/schedule";
+@import "components/blockquote";
+@import "components/event-info";
 

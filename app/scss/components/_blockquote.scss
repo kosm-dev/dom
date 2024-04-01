@@ -1,0 +1,25 @@
+.blockquote {
+  width: 100%;
+  max-width: 611px;
+  border: 1px solid $dark;
+  background-color: $gray1;
+  padding: 16px;
+  color: $dark;
+  &__text {
+    @extend %monti-400;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  &__author {
+    @extend %monti-700;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .blockquote__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

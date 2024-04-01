@@ -1,0 +1,29 @@
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  &__title {
+    @extend %proxima-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark2;
+  }
+  &__content {
+    a {
+      color: inherit;
+    }
+  }
+  &__content > * {
+    margin-bottom: 8px;
+  }
+  &__content > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .event-info__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
