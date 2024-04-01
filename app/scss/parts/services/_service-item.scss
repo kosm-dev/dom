@@ -29,3 +29,36 @@
     margin-top: 64px;
   }
 }
+
+@media (max-width: 992px) {
+  .service-item {
+    flex-direction: column;
+    gap: 40px 0;
+  }
+
+  .service-item__content {
+    max-width: none;
+  }
+  .service-item__img {
+    align-self: center;
+  }
+  .service-item__img img {
+    min-height: 228px;
+  }
+  .service-item__title {
+    margin-bottom: 24px;
+  }
+
+  .service-item__descr p {
+    margin-bottom: 30px;
+  }
+  .service-item__btns {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .service-item__img img {
+    min-height: 180px;
+  }
+}

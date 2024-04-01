@@ -18,3 +18,19 @@
     margin-bottom: 100px;
   }
 }
+
+@media (max-width: 992px) {
+  .main__services-list {
+  margin-bottom: 68px;
+}
+  .services-list__title-special {
+    margin-bottom: 64px;
+  }
+  .services-list__inner {
+    gap: 0;
+  }
+  .services-list__inner .service-item {
+    padding-bottom: 64px;
+    border-bottom: 0;
+  }
+}
