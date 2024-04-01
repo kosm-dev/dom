@@ -1,0 +1,28 @@
+.schedule {
+  &__title {
+    margin-bottom: 16px;
+    @extend %proxima-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark2;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.schedule-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  &__time {
+    flex-basis: 50px;
+    flex-shrink: 0;
+  }
+  &__event {
+    width: 100%;
+  }
+}
+
+
