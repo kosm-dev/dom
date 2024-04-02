@@ -1,0 +1,19 @@
+.childschurch-items {
+  margin-bottom: 150px;
+  .childschurch-item {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid $dark;
+  }
+  .childschurch-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .childschurch-items .childschurch-item {
+    margin-top: 64px;
+    padding-bottom: 64px;
+  }
+}
