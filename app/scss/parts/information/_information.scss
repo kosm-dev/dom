@@ -5,6 +5,7 @@
   &--special .information__item {
     border-bottom: 0;
   }
+
 }
 
 .information-item {
@@ -31,10 +32,14 @@
     width: 100%;
     max-width: 611px;
     border: 1px solid $dark;
+    height: 400px;
+    overflow: hidden;
   }
 
   &__media img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   &--special .information-item__media {
     order: -1;
@@ -47,9 +52,11 @@
     flex-direction: column;
     align-items: center;
   }
+
   .information-item__media {
     margin-bottom: 40px;
     order: -1;
+    height: 228px;
   }
 
   .information-item__content {
@@ -59,5 +66,13 @@
     margin-bottom: 40px;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .information-item__media {
+    margin-bottom: 40px;
+    order: -1;
+    height: 180px;
   }
 }

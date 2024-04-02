@@ -1,0 +1,49 @@
+.main__policy {
+  margin-bottom: 150px;
+}
+
+.policy {
+  &__maintitle {
+    margin-bottom: 100px;
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 60px;
+  }
+  &__sidebar {
+    width: 353px;
+  }
+
+  &__content-title {
+    margin-bottom: 40px;
+  }
+  &__text {
+    @extend %proxima-400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    p {
+      margin-bottom: 40px;
+    }
+    ol {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .policy__maintitle {
+    margin-bottom: 64px;
+  }
+  .policy__inner {
+    flex-direction: column;
+    gap: 64px 0;
+  }
+
+  .policy__sidebar {
+    width: 100%;
+    max-width: 353px;
+  }
+}

@@ -17,7 +17,8 @@
 
 @import "parts/timetable/timetable";
 
-@import "parts/faq-items/faq-items";
+@import "parts/faq/faq-items";
+@import "parts/faq/faq-item";
 
 @import "parts/about/about-history";
 @import "parts/about/about-features";
@@ -57,6 +58,8 @@
 @import "parts/childschurch/childschurch-about";
 @import "parts/childschurch/childschurch-items";
 
+@import "parts/policy/policy";
+
 @import "components/infoboard";
 @import "components/buttons";
 @import "components/socials";
@@ -65,3 +68,4 @@
 @import "components/schedule";
 @import "components/blockquote";
 @import "components/event-info";
+@import "components/select";

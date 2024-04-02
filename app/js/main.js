@@ -105,6 +105,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  // selects
+  if (document.querySelector('.dropdown-policy')) {
+    const customSelect = document.querySelectorAll('.custom-select');
+
+    customSelect.forEach((select) => {
+      new Choices(select, {
+        searchEnabled: false,
+        allowHTML: true,
+        itemSelectText: ''
+      });
+    });
+  }
+
+
+
 
 
 

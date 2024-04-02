@@ -13,7 +13,11 @@
   &__img {
     width: 100%;
     max-width: 611px;
+    img {
+      object-fit: cover;
+    }
   }
+
   &__content {
     width: 100%;
     max-width: 500px;
@@ -31,7 +35,7 @@
   }
   .socials__link img {
     width: 47px;
-}
+  }
 }
 
 .post-featured {
@@ -61,7 +65,7 @@
     flex-direction: column;
     gap: 40px 0;
   }
-  
+
   .post-featured {
     margin-bottom: 70px;
   }
