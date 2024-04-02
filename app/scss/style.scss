@@ -8,28 +8,37 @@
 @import "parts/footer/footer";
 
 @import "parts/hero/hero";
-@import "parts/top/top";
-@import "parts/top-items/top-items";
-@import "parts/information/information";
-@import "parts/timetable/timetable";
-@import "parts/faq-items/faq-items";
 
+@import "parts/top/top";
+@import "parts/top/top-items";
+@import "parts/top/top-item";
+
+@import "parts/information/information";
+
+@import "parts/timetable/timetable";
+
+@import "parts/faq-items/faq-items";
 
 @import "parts/about/about-history";
 @import "parts/about/about-features";
+
 @import "parts/believe/believe-features";
 
 @import "parts/leaders/leaders-main";
 @import "parts/leaders/persons";
+
 @import "parts/media/media";
 @import "parts/media/media-main";
 
+@import "parts/posts/main-post";
+@import "parts/posts/post";
 
-@import "parts/main-post/main-post";
-@import "parts/main-entrie/main-entrie";
+@import "parts/entries/group-entrie";
+@import "parts/entries/main-entrie";
+@import "parts/entries/entrie";
 
+@import "parts/articles/article";
 
-@import "parts/group-entrie/group-entrie";
 @import "parts/steps/steps";
 
 @import "parts/salvation/salvation";
@@ -37,28 +46,16 @@
 
 @import "parts/meetings/meetings";
 @import "parts/meetings/meetings-items";
-
-@import "parts/main-meeting/main-meeting";
-
+@import "parts/meetings/main-meeting";
 
 @import "parts/services/services-list";
 @import "parts/services/main-service";
 @import "parts/services/service-item";
 
-
 @import "parts/childschurch/childschurch";
 @import "parts/childschurch/childschurch-item";
 @import "parts/childschurch/childschurch-about";
 @import "parts/childschurch/childschurch-items";
-
-
-
-
-
-@import "components/article";
-@import "components/post";
-@import "components/entrie";
-
 
 @import "components/infoboard";
 @import "components/buttons";
@@ -68,4 +65,3 @@
 @import "components/schedule";
 @import "components/blockquote";
 @import "components/event-info";
-
