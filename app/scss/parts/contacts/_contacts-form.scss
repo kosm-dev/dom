@@ -1,0 +1,150 @@
+.contacts-form {
+  width: 100%;
+  max-width: 610px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  &_input {
+    padding: 12px 20px;
+    border: 1px solid $dark;
+    border-radius: 0;
+    @extend %proxima-400;
+    font-size: 16px;
+    line-height: 25px;
+    font-variant: all-small-caps;
+    color: rgba($dark, 0.7);
+  }
+  &_input::placeholder {
+    @extend %proxima-400;
+    font-size: 16px;
+    line-height: 25px;
+    font-variant: all-small-caps;
+    color: rgba($dark, 0.7);
+  }
+  &__textarea {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+
+    padding: 12px 20px;
+    border: 1px solid $dark;
+    border-radius: 0;
+    @extend %proxima-400;
+    font-size: 16px;
+    line-height: 25px;
+    font-variant: all-small-caps;
+    color: rgba($dark, 0.7);
+  }
+  &__textarea::placeholder {
+    @extend %proxima-400;
+    font-size: 16px;
+    line-height: 25px;
+    font-variant: all-small-caps;
+    color: rgba($dark, 0.7);
+  }
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 20px;
+  }
+  input[type="checkbox"] {
+    @extend %checkbox-hidden;
+  }
+  label {
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $dark;
+  }
+  &__check label input:checked + .contacts-form__checkbox > svg {
+    display: none;
+  }
+  &__infotext {
+    width: 100%;
+    max-width: 560px;
+    @extend %proxima-400;
+
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark;
+  }
+  &__btns {
+    align-self: flex-end;
+  }
+}
+
+
+.contacts-form__select {
+  .choices:after {
+    display: none;
+  }
+  .choices::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) rotate(0deg);
+    right: 15px;
+    width: 20px;
+    height: 10px;
+    background-image: url("../images/icons/arrow-form.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s;
+  }
+  .choices.is-open.choices::before {
+    transform: translate(0, -50%) rotate(180deg);
+  }
+
+  .choices__inner {
+    padding: 12px 60px 12px 20px;
+    min-height: 48px;
+    @extend %proxima-400;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba($dark, 0.7);
+
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid $dark;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+  }
+  .choices__list--single {
+    padding: 0;
+  }
+  .choices__list--single .choices__item {
+    opacity: 1;
+  }
+
+  .choices__list--dropdown .choices__item,
+  .choices__list[aria-expanded] .choices__item {
+    @extend %proxima-400;
+    padding: 12px 20px;
+    color: $dark;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+  }
+  .choices__placeholder {
+    opacity: 1;
+  }
+
+  .choices__list--dropdown .choices__item--selectable.is-highlighted,
+  .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+    @extend %proxima-700;
+    transition: all 0.2s;
+    background-color: $gray1;
+  }
+  .choices__list--dropdown,
+  .choices__list[aria-expanded] {
+    border: 1px solid $dark;
+    border-radius: 0;
+  }
+}

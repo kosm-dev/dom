@@ -31,3 +31,14 @@ $dark3: #252525;
 $gray1: #f0f0f0;
 $gray2: #393939;
 $gray3: #cccccc;
+
+
+
+%checkbox-hidden,
+%radio-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

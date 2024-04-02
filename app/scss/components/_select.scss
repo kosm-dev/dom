@@ -61,8 +61,6 @@
 
   .choices__list--dropdown,
   .choices__list[aria-expanded] {
-    position: absolute;
-    width: 100%;
     background-color: $gray1;
     border: 1px solid $dark;
     border-radius: 0;

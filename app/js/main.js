@@ -106,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // selects
-  if (document.querySelector('.dropdown-policy')) {
     const customSelect = document.querySelectorAll('.custom-select');
 
     customSelect.forEach((select) => {
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         itemSelectText: ''
       });
     });
-  }
+
 
 
 

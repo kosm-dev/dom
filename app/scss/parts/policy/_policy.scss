@@ -13,7 +13,8 @@
     gap: 0 60px;
   }
   &__sidebar {
-    width: 353px;
+    width: 100%;
+    max-width: 353px;
   }
 
   &__content-title {
@@ -40,10 +41,5 @@
   .policy__inner {
     flex-direction: column;
     gap: 64px 0;
-  }
-
-  .policy__sidebar {
-    width: 100%;
-    max-width: 353px;
   }
 }
