@@ -1,0 +1,78 @@
+.childschurch-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0 50px;
+  &__content {
+    width: 100%;
+    max-width: 715px;
+  }
+  &__title {
+    margin-bottom: 44px;
+    @extend %proxima-800;
+    font-size: 36px;
+    line-height: 43px;
+    color: $dark2;
+  }
+  &__text {
+    p {
+      margin-bottom: 40px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      @extend %proxima-700;
+    }
+  }
+
+  &__btns {
+    margin-top: 64px;
+  }
+  &__img {
+    border: 1px solid $dark;
+    width: 100%;
+    max-width: 400px;
+    height: 611px;
+    overflow: hidden;
+  }
+  &__img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .childschurch-item {
+    flex-direction: column;
+    gap: 64px 0;
+  }
+  .childschurch-item__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .childschurch-item__content {
+    max-width: none;
+  }
+  .childschurch-item__text {
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  .childschurch-item__btns {
+    margin-top: 40px;
+  }
+  .childschurch-item__img {
+    align-self: center;
+    order: -1;
+    height: 228px;
+  }
+}
+
+@media (max-width: 360px) {
+  .childschurch-item__img {
+    height: 180px;
+  }
+}
