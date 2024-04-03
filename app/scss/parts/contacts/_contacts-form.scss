@@ -160,3 +160,9 @@
     max-width: none;
   }
 }
+
+@media (max-width: 576px) {
+  .contacts-form__btn {
+    width: 100%;
+  }
+}
