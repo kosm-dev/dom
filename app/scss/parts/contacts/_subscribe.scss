@@ -34,6 +34,9 @@
 }
 
 @media (max-width: 992px) {
+  .main__subscribe {
+    margin-bottom: 64px;
+}
   .subscribe__inner {
     flex-direction: column;
     padding-bottom: 64px;
