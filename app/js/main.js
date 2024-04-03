@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const list = parent.querySelector('.item-menu__list');
         icon.classList.toggle('active');
         list.classList.toggle('active');
-        
+
       });
     });
 
@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
   // slider
   const heroSlider = new Swiper('.hero-slider', {
     // Optional parameters
@@ -106,19 +105,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // selects
-    const customSelect = document.querySelectorAll('.custom-select');
+  const customSelect = document.querySelectorAll('.custom-select');
 
-    customSelect.forEach((select) => {
-      new Choices(select, {
-        searchEnabled: false,
-        allowHTML: true,
-        itemSelectText: ''
-      });
+  customSelect.forEach((select) => {
+    new Choices(select, {
+      searchEnabled: false,
+      allowHTML: true,
+      itemSelectText: ''
     });
+  });
 
 
-
-
+  // adaptive section contacts
 
 
 

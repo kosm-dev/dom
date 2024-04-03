@@ -42,7 +42,13 @@
     font-variant: all-small-caps;
     color: rgba($dark, 0.7);
   }
-  &__info {
+  &__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px 0;
+  }
+  &__infobox {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -76,7 +82,7 @@
     line-height: 14px;
     color: $dark;
   }
-  &__btns {
+  &__btn {
     align-self: flex-end;
   }
 }
@@ -146,5 +152,11 @@
   .choices__list[aria-expanded] {
     border: 1px solid $dark;
     border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-form {
+    max-width: none;
   }
 }
