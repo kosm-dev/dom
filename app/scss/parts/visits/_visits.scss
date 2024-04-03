@@ -1,0 +1,38 @@
+.main__visits {
+  margin: 100px 0;
+}
+
+.visits {
+  &__inner {
+  }
+  &__title {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 50px;
+  }
+  &__content {
+  }
+  &__content-title {
+  }
+  &__text {
+    width: 100%;
+    max-width: 715px;
+  }
+  &__img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid $dark;
+    height: 611px;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
