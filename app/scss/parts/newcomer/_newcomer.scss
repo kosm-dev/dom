@@ -1,0 +1,22 @@
+.main__newcomer {
+  margin: 100px 0;
+}
+
+.newcomer {
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main__newcomer {
+    margin: 64px 0;
+  }
+  .newcomer__inner {
+    flex-direction: column;
+    gap: 64px 0;
+  }
+}
