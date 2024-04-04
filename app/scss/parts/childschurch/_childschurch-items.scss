@@ -1,5 +1,8 @@
-.childschurch-items {
+.main__childschurch-items {
   margin-bottom: 150px;
+}
+
+.childschurch-items {
   .childschurch-item {
     margin-top: 100px;
     padding-bottom: 100px;
@@ -12,6 +15,9 @@
 }
 
 @media (max-width: 992px) {
+  .main__childschurch-items {
+  margin-bottom: 100px;
+}
   .childschurch-items .childschurch-item {
     margin-top: 64px;
     padding-bottom: 64px;
