@@ -1,0 +1,86 @@
+.main {
+  &__calendar {
+    margin-bottom: 150px;
+  }
+}
+.calendar {
+  &__titlespecial {
+    margin-bottom: 100px;
+  }
+
+  &__head {
+    margin-bottom: 80px;
+    padding-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid $dark;
+  }
+  &__body {
+    margin-bottom: 32px;
+  }
+}
+
+.calendar-prev {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+  &__title {
+    @extend %proxima-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark;
+  }
+}
+
+.calendar-next {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+  &__title {
+    @extend %proxima-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark;
+  }
+}
+
+.calendar-items {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .timetable-item {
+    max-width: 1030px;
+    border-bottom: 1px solid $dark;
+    &__value {
+      gap: 13px 0;
+    }
+    &__day {
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    &__time {
+      @extend %proxima-800;
+    }
+  }
+}
+
+.calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    margin: 0 16px;
+    @extend %proxima-700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $dark;
+  }
+}
