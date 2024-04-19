@@ -31,6 +31,9 @@
   &__text {
     margin-bottom: 32px;
   }
+  &__text span {
+    @extend %proxima-700;
+  }
   &__text p {
     margin-bottom: 32px;
   }

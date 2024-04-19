@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Dom</title>
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <nav class="infoboard">
+      <div class="container">
+        <div class="infoboard__inner">
+          <div class="infoboard__icon">
+            <img src="images/circle.svg" alt="circle">
+          </div>
+          <div class="infoboard__text">
+            W każdą niedzielę transmisja na żywo
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+
+      <div class="container-fluid">
+
+        <div class="header__inner">
+
+          <a class="header__logo logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  O nas
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Spotkania
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Media
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Jestem nowy
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Darowizna
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-control">
+
+            <div class="langswitcher">
+              <a class="langswitcher__link langswitcher__link--active" href="#">
+                pl
+              </a>
+              <a class="langswitcher__link" href="#">
+                en
+              </a>
+              <a class="langswitcher__link" href="#">
+                ua
+              </a>
+            </div>
+
+            <div class="burger">
+              <img src="images/burger.svg" alt="burger">
+            </div>
+
+          </div>
+
+          <nav class="mobile-menu">
+            <div class="mobile-menu__inner">
+              <div class="mobile-menu__head">
+                <a class="mobile-menu__logo logo" href="#">
+                  <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+
+                <div class="burger-close">
+                  <img src="images/close.svg" alt="burger close">
+                </div>
+              </div>
+
+              <div class="mobile-menu__body">
+
+
+
+                <div class="item-menu">
+
+                  <div class="item-menu__title" href="#">
+                    <a href="#">O nas</a>
+                    <div class="item-menu__icon active" data-icon-toggle>
+                      <img src="images/icons/main-arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+
+                  <ul class="item-menu__list active">
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Kim jesteśmy
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Pastorzy i liderzy
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Wierzymy
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="item-menu">
+                  <div class="item-menu__title" href="#">
+                    <a href="#">Zaplanuj wizytę</a>
+                    <div class="item-menu__icon" data-icon-toggle>
+                      <img src="images/icons/main-arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+
+                  <ul class="item-menu__list">
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Czego mam się spodziewać?
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Kościół dziecięcy
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Wydarzenia
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+
+
+                <div class="item-menu">
+
+                  <div class="item-menu__title" href="#">
+                    <a href="#">Spotkania</a>
+                    <div class="item-menu__icon" data-icon-toggle>
+                      <img src="images/icons/main-arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <ul class="item-menu__list">
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Spotkania niedzielne
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Spotkania DOMowe
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Dla studentów
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Dla młodzieży
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Dla dzieci
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Kursy
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="item-menu">
+
+                  <div class="item-menu__title" href="#">
+                    <a href="#">Media</a>
+                    <div class="item-menu__icon" data-icon-toggle>
+                      <img src="images/icons/main-arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+
+                  <ul class="item-menu__list">
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Kazania
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Podcasty
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Blog
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+
+
+                <div class="item-menu">
+
+
+                  <div class="item-menu__title" href="#">
+                    <a href="#">Jestem tu nowy</a>
+                    <div class="item-menu__icon" data-icon-toggle>
+                      <img src="images/icons/main-arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+
+                  <ul class="item-menu__list">
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Jak być zbawionym?
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Potrzebuję modlitwy
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Chcę poznać nowych ludzi
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Chcę się zaangażować
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Potrzebuję chrztu
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="item-menu">
+
+                  <div class="item-menu__title" href="#">
+                    <a href="#">Kontakt</a>
+                    <div class="item-menu__icon" data-icon-toggle>
+                      <img src="images/icons/main-arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+
+                  <ul class="item-menu__list">
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Informacje kontaktowe
+                      </a>
+                    </li>
+                    <li>
+                      <a class="item-menu__link" href="#">
+                        Newsletter
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="item-menu__title" href="#">
+                    <a href="#">Darowizna</a>
+                    <div class="item-menu__icon">
+                      <img src="images/icons/main-arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <ul class="socials">
+                  <li>
+                    <a class="socials__link" href="#">
+                      <img src="images/socials-dark/facebook.svg" alt="social icon">
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="socials__link" href="#">
+                      <img src="images/socials-dark/instagram.svg" alt="social icon">
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a class="socials__link" href="#">
+                      <img src="images/socials-dark/youtube.svg" alt="social icon">
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a class="socials__link" href="#">
+                      <img src="images/socials-dark/spotify.svg" alt="social icon">
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="socials__link" href="#">
+                      <img src="images/socials-dark/soundcloud.svg" alt="social icon">
+                    </a>
+                  </li>
+                </ul>
+
+
+
+
+              </div>
+
+
+
+            </div>
+          </nav>
+
+        </div>
+      </div>
+
+    </header>
+
+
+    <main class="main">
+
+      <section class="main__services-list services-list">
+        <div class="container-fluid">
+          <h2 class="services-list__title-special title-special">
+            Zaangażuj się w wolontariat!
+          </h2>
+        </div>
+        <div class="container">
+          <div class="services-list__inner">
+
+            <div class="service-item">
+
+              <div class="service-item__img">
+                <img src="images/services/s1.jpg" alt="service">
+              </div>
+
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s2.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+
+
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s3.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s1.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+            
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s2.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+            
+            
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s3.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+              </div>
+            
+            </div>
+
+
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s1.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+            
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s2.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+            
+            
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s3.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s1.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+            
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s2.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+            
+            
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s3.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s1.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+            
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s2.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+                <div class="service-item__btns">
+                  <a class="btn" href="#">
+                    zobacz więcej
+                    <div class="btn__icon">
+                      <img src="images/icons/btn-arrow-right.svg" alt="arrow">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            </div>
+            
+            
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s3.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="service-item">
+            
+              <div class="service-item__img">
+                <img src="images/services/s3.jpg" alt="service">
+              </div>
+            
+              <div class="service-item__content">
+                <h3 class="service-item__title title">
+                  Kurs Alfa
+                </h3>
+                <div class="service-item__descr">
+                  <p>
+                    Pastor Szymon Kruba jest w służbie od 2006 roku, współtworzył i prowadził spotkania Duszpasterstwa
+                    Akademickiego
+                    Kościoła Zielonoświątkowego Petra-Warszawa, następnie w 2009 roku został dyrektorem agendy Kościoła
+                    Zielonoświątkowego
+                    D.A. Petra Polska,
+                  </p>
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="footer__inner">
+
+          <div class="footer__top">
+            <a class="footer__logo logo" href="#">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+
+            <div class="footer__contacts">
+              <nav class="footer-menu">
+                <h4 class="footer-menu__title">
+                  Nabożeństwa
+                </h4>
+
+                <ul class="footer-menu__list">
+                  <li>
+                    <a class="footer-menu__link" href="#">
+                      Niedziela 11.00 – 12.30
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <nav class="footer-menu">
+                <h4 class="footer-menu__title">
+                  Kontakt
+                </h4>
+
+                <ul class="footer-menu__list">
+                  <li>
+                    <a class="footer-menu__link" href="mailto:info@koscioldom.pl">
+                      info@koscioldom.pl
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+
+            <div class="footer__address">
+              <nav class="footer-menu">
+                <h4 class="footer-menu__title">
+                  Nasza lokalizacja
+                </h4>
+
+                <ul class="footer-menu__list">
+                  <li>
+                    <a class="footer-menu__link" href="#">
+                      Gotarda 16, 02-683 Warszawa
+                      <div class="footer-menu__icon">
+                        <img src="images/icons/item-arrow.svg" alt="arrow">
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="footer-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.1398263856086!2d21.047810913936317!3d52.240843855334745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2z0JLQsNGA0YjQsNCy0LAsINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1711214806326!5m2!1sru!2sua"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="footer__followus">
+              <nav class="footer-menu">
+                <h4 class="footer-menu__title">
+                  Nasza lokalizacja
+                </h4>
+              </nav>
+              <form class="form-subscribe">
+                <input class="form-subscribe__input" placeholder="Email" type="text" name="newslatter" required>
+                <button class="form-subscribe__btn">
+                  Zapisz się
+                </button>
+              </form>
+
+              <ul class="socials">
+                <li>
+                  <a class="socials__link" href="#">
+                    <img src="images/socials-dark/facebook.svg" alt="social icon">
+                  </a>
+                </li>
+
+                <li>
+                  <a class="socials__link" href="#">
+                    <img src="images/socials-dark/instagram.svg" alt="social icon">
+                  </a>
+                </li>
+
+
+                <li>
+                  <a class="socials__link" href="#">
+                    <img src="images/socials-dark/youtube.svg" alt="social icon">
+                  </a>
+                </li>
+
+
+                <li>
+                  <a class="socials__link" href="#">
+                    <img src="images/socials-dark/spotify.svg" alt="social icon">
+                  </a>
+                </li>
+
+                <li>
+                  <a class="socials__link" href="#">
+                    <img src="images/socials-dark/soundcloud.svg" alt="social icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer-copy">
+              <div class="footer-copy__text">
+                © 2023 Kościół DOM
+              </div>
+
+              <nav class="footer-rules">
+                <ul class="footer-rules__list">
+                  <li>
+                    <a class="footer-rules__link" href="#">
+                      Polityka Prywatności
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="footer-rules__link" href="#">
+                      Polityka Cookies
+                    </a>
+                  </li>
+
+
+
+                  <li>
+                    <a class="footer-rules__link" href="#">
+                      Regulamin Newsletter
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

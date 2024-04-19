@@ -1,0 +1,37 @@
+.event-schedule {
+  &__title {
+    margin-bottom: 16px;
+    @extend %proxima-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark3;
+  }
+  &__list {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    li {
+      display: flex;
+    }
+    li span {
+      margin-right: 26px;
+      @extend %proxima-700;
+      color: $dark;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .event-schedule__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .event-schedule__list {
+    gap: 8px;
+  }
+  .event-schedule__list li span {
+    margin-right: 20px;
+  }
+}
