@@ -1,5 +1,8 @@
 .header {
   padding: 12px 32px;
+  &--special {
+    border-bottom: 1px solid $dark;
+  }
   &__inner {
     display: flex;
     align-items: center;
