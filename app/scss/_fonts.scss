@@ -11,6 +11,17 @@
 
 @font-face {
   font-family: "Proxima Nova";
+  font-weight: 600;
+  font-style: normal;
+  src:
+    local("Proxima Nova"),
+    url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
   font-weight: 700;
   font-style: normal;
   src:
