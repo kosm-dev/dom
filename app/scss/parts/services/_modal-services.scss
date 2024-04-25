@@ -1,0 +1,135 @@
+.modal-services {
+  &__head {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &__body {
+    padding: 0 64px 120px;
+  }
+  &__title {
+    margin-bottom: 64px;
+  }
+
+  .modal {
+    &__dialog {
+      max-width: 740px;
+    }
+    &__content {
+      border: 1px solid $dark;
+      max-height: 95vh;
+      background-color: $gray1;
+    }
+    &__close:hover {
+      transform: scale(0.95);
+    }
+  }
+}
+.services-form {
+  &__input {
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+    border: 1px solid;
+    padding: 12px 20px;
+    font-size: 16px;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 25px;
+      font-variant: all-small-caps;
+      color: rgba($dark, 0.7);
+    }
+  }
+  &__textarea {
+    margin-bottom: 16px;
+    width: 100%;
+    display: block;
+    height: 120px;
+    resize: none;
+    border: 1px solid $dark;
+    padding: 12px 20px;
+    font-size: 16px;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 25px;
+      color: rgba($dark, 0.7);
+    }
+  }
+
+  &__infobox {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 20px;
+  }
+  input[type="checkbox"] {
+    @extend %checkbox-hidden;
+  }
+  label {
+    cursor: pointer;
+  }
+  &__checkbox {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $dark;
+  }
+
+   &__check label input:checked + .services-form__checkbox > svg {
+    display: none;
+  }
+  &__infotext {
+    width: 100%;
+    max-width: 560px;
+    @extend %proxima-400;
+
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark;
+  }
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+}
+
+
+@media (max-width: 992px) {
+  .modal-services__head {
+    margin-bottom: 15px;
+    padding-top: 20px;
+  }
+  .modal-services__body {
+    padding: 0 24px 120px;
+  }
+
+  .modal-services {
+    .modal__dialog {
+      margin: 124px auto 40px;
+    }
+    .modal__content {
+      max-height: 100vh;
+    }
+    .salvation-form {
+      max-width: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .modal-services {
+    .modal__dialog {
+      margin: 0 auto ;
+    }
+  }
+}
