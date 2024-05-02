@@ -44,6 +44,11 @@
       color: rgba($dark, 0.7);
     }
   }
+
+  &__box {
+    display: flex;
+    gap: 0 16px;
+  }
   &__textarea {
     margin-bottom: 16px;
     width: 100%;
@@ -119,10 +124,12 @@
     .modal__content {
       max-height: 100vh;
     }
-    .salvation-form {
-      max-width: none;
+    .services-form__box {
+      flex-direction: column;
     }
   }
+
+  
 }
 
 @media (max-width: 768px) {
